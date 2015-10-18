@@ -24,9 +24,12 @@ namespace SynthApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private NotePlayer notePlayer;
+
         public MainPage()
         {
             this.InitializeComponent();
+            this.notePlayer = new NotePlayer();
             
         }
 
@@ -40,17 +43,20 @@ namespace SynthApp
         {
             switch (e.Key)
             {
-                case VirtualKey.W:
-                    ColorCanvas.Background = new SolidColorBrush(Colors.Green);
-                    break;
-                case VirtualKey.A:
-                    ColorCanvas.Background = new SolidColorBrush(Colors.AliceBlue);
-                    break;
-                case VirtualKey.S:
-                    ColorCanvas.Background = new SolidColorBrush(Colors.Magenta);
+                case VirtualKey.C:
+                    notePlayer.playDrumNote("C");
                     break;
                 case VirtualKey.D:
-                    ColorCanvas.Background = new SolidColorBrush(Colors.Yellow);
+                    notePlayer.playDrumNote("D");
+                    break;
+                case VirtualKey.E:
+                    notePlayer.playDrumNote("E");
+                    break;
+                case VirtualKey.G:
+                    notePlayer.playDrumNote("G");
+                    break;
+                case VirtualKey.A:
+                    notePlayer.playDrumNote("A");
                     break;
             }
 
