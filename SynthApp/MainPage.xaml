@@ -16,8 +16,9 @@
                 MyoMusic
             </TextBlock>
         </RelativePanel>
-        <Grid KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp">
-            
-        </Grid>
+        <ContentControl x:Name="ColorContentControl" KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Canvas x:Name="ColorCanvas" Width="100" Height="100" Background="Red">
+            </Canvas>
+        </ContentControl>
     </Grid>
 </Page>
