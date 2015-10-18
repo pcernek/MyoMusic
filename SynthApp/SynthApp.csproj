@@ -103,8 +103,6 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Note.cs" />
-    <Compile Include="NotePlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,12 +113,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\bass-128.png" />
+    <Content Include="Assets\drum-1.wav" />
     <Content Include="Assets\drum-128.png" />
+    <Content Include="Assets\drum-2.wav" />
+    <Content Include="Assets\drum-3.wav" />
+    <Content Include="Assets\drum-4.wav" />
+    <Content Include="Assets\drum-5.wav" />
     <Content Include="Assets\guitar-128.png" />
     <Content Include="Assets\myo-music-128.png" />
     <Content Include="Assets\myomusic-150.png" />
     <Content Include="Assets\myomusic-310.png" />
+    <Content Include="Assets\myomusic-620x300.png" />
     <Content Include="Assets\myomusic-71.png" />
+    <Content Include="Assets\myomusic.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -139,11 +144,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="CSCore">
-      <HintPath>..\packages\CSCore.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

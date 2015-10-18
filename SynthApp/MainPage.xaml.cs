@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.System;
+using Windows.Media.Playback;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -24,47 +26,60 @@ namespace SynthApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private NotePlayer notePlayer;
+
+        StorageFolder storageFolder;
 
         public MainPage()
         {
             this.InitializeComponent();
-            this.notePlayer = new NotePlayer();
-            
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Set the input focus to ensure that keyboard events are raised.
             this.Loaded += delegate { this.Focus(FocusState.Programmatic); };
+            storageFolder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("Assets");
         }
 
-        private void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
+        private async void Grid_KeyDown(object sender, KeyRoutedEventArgs e)
         {
+            string audioFileName = "";
             switch (e.Key)
             {
-                case VirtualKey.C:
-                    notePlayer.playDrumNote("C");
+                case VirtualKey.A:
+                    audioFileName = "drum-1.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
+                    break;
+                case VirtualKey.W:
+                    audioFileName = "drum-2.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.D:
-                    notePlayer.playDrumNote("D");
+                    audioFileName = "drum-3.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
-                case VirtualKey.E:
-                    notePlayer.playDrumNote("E");
+                case VirtualKey.S:
+                    audioFileName = "drum-4.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
-                case VirtualKey.G:
-                    notePlayer.playDrumNote("G");
+                case VirtualKey.Q:
+                    audioFileName = "drum-5.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
-                case VirtualKey.A:
-                    notePlayer.playDrumNote("A");
-                    break;
+                default:
+                    return;
             }
+
+            StorageFile storageFile = await storageFolder.GetFileAsync(audioFileName);
+            var stream = await storageFile.OpenAsync(FileAccessMode.Read);
+            player.SetSource(stream, storageFile.ContentType);
+            player.Play();
 
         }
 
         private void Grid_KeyUp(object sender, KeyRoutedEventArgs e)
         {
-
+            DrumCanvas.Background = new SolidColorBrush(Colors.White);
         }
         
     }
