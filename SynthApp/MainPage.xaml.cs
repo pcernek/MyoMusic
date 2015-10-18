@@ -74,52 +74,52 @@ namespace SynthApp
                     break;
                 case VirtualKey.A:
                     player = guitarPlayer;
-                    audioFileName = "guitar-C.wav";
+                    audioFileName = "guitar-E.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.S:
                     player = guitarPlayer;
-                    audioFileName = "guitar-D.wav";
+                    audioFileName = "guitar-G.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.D:
                     player = guitarPlayer;
-                    audioFileName = "guitar-E.wav";
+                    audioFileName = "guitar-A.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.F:
                     player = guitarPlayer;
-                    audioFileName = "guitar-G.wav";
+                    audioFileName = "guitar-C.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.G:
                     player = guitarPlayer;
-                    audioFileName = "guitar-A.wav";
+                    audioFileName = "guitar-D.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.Z:
                     player = pianoPlayer;
-                    audioFileName = "piano-C.wav";
+                    audioFileName = "piano-E.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.X:
                     player = pianoPlayer;
-                    audioFileName = "piano-D.wav";
+                    audioFileName = "piano-G.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.C:
                     player = pianoPlayer;
-                    audioFileName = "piano-E.wav";
+                    audioFileName = "piano-A.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.V:
                     player = pianoPlayer;
-                    audioFileName = "piano-G.wav";
+                    audioFileName = "piano-C.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.B:
                     player = pianoPlayer;
-                    audioFileName = "piano-A.wav";
+                    audioFileName = "piano-D.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 default:
