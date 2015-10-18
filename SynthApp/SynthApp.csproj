@@ -120,11 +120,11 @@
     <Content Include="Assets\drum-4.wav" />
     <Content Include="Assets\drum-5.wav" />
     <Content Include="Assets\guitar-128.png" />
-    <Content Include="Assets\guitar-A.aif" />
-    <Content Include="Assets\guitar-C.aif" />
-    <Content Include="Assets\guitar-D.aif" />
-    <Content Include="Assets\guitar-E.aif" />
-    <Content Include="Assets\guitar-G.aif" />
+    <Content Include="Assets\guitar-A.wav" />
+    <Content Include="Assets\guitar-C.wav" />
+    <Content Include="Assets\guitar-D.wav" />
+    <Content Include="Assets\guitar-E.wav" />
+    <Content Include="Assets\guitar-G.wav" />
     <Content Include="Assets\myo-music-128.png" />
     <Content Include="Assets\myomusic-150.png" />
     <Content Include="Assets\myomusic-310.png" />
