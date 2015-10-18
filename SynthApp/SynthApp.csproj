@@ -103,6 +103,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Note.cs" />
     <Compile Include="NotePlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -116,6 +117,10 @@
     <Content Include="Assets\bass-128.png" />
     <Content Include="Assets\drum-128.png" />
     <Content Include="Assets\guitar-128.png" />
+    <Content Include="Assets\myo-music-128.png" />
+    <Content Include="Assets\myomusic-150.png" />
+    <Content Include="Assets\myomusic-310.png" />
+    <Content Include="Assets\myomusic-71.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
