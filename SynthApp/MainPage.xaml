@@ -25,18 +25,19 @@
                     <Style TargetType="StackPanel">
                         <Setter Property="Margin" Value="10"></Setter>
                         <Setter Property="Height" Value="100"></Setter>
-                        <Setter Property="RelativePanel.AlignLeftWithPanel" Value="True"></Setter>
-                        <Setter Property="RelativePanel.AlignRightWithPanel" Value="True"></Setter>
+                        <Setter Property="RelativePanel.AlignHorizontalCenterWithPanel" Value="True"></Setter>
+                        
                     </Style>
                     <Style TargetType="Image">
-                        <Setter Property="Width" Value="60"></Setter>
-                        <Setter Property="Margin" Value="5"></Setter>
+                        <Setter Property="Width" Value="80"></Setter>
+                        <Setter Property="Margin" Value="10"></Setter>
+                        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                         
                     </Style>
                     <Style TargetType="Canvas">
-                        <Setter Property="Width" Value="70"></Setter>
-                        <Setter Property="Height" Value="70"></Setter>
-                        <Setter Property="Margin" Value="10"></Setter>
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="Height" Value="100"></Setter>
+                        <Setter Property="Margin" Value="0"></Setter>
                     </Style>
                 </RelativePanel.Resources>
 
@@ -44,6 +45,7 @@
 
                 <MediaElement x:Name="drumPlayer"></MediaElement>
                 <MediaElement x:Name="guitarPlayer"></MediaElement>
+                <MediaElement x:Name="pianoPlayer"></MediaElement>
 
                 <StackPanel x:Name="DrumPanel" Orientation="Horizontal" Background="White" >
                     <Canvas x:Name="DrumCanvas" Background="White">
@@ -57,15 +59,12 @@
                     </Canvas>
                 </StackPanel>
                 
-                <StackPanel x:Name="BassPanel" Orientation="Horizontal" Background="White" RelativePanel.Below="GuitarPanel">
-                    <Canvas x:Name="BassCanvas" Background="White">
-                        <Image Source="Assets\bass-128.png" />
+                <StackPanel x:Name="PianoPanel" Orientation="Horizontal" Background="White" RelativePanel.Below="GuitarPanel">
+                    <Canvas x:Name="PianoCanvas" Background="White">
+                        <Image Source="Assets\bass-128.png" Height="80"/>
                     </Canvas>
                 </StackPanel>
 
-                <TextBlock x:Name="DummyTextBlock" RelativePanel.Below="BassPanel">
-                    
-                </TextBlock>
             </RelativePanel>
 
         </RelativePanel>
