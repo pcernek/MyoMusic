@@ -74,27 +74,27 @@ namespace SynthApp
                     break;
                 case VirtualKey.C:
                     player = guitarPlayer;
-                    audioFileName = "guitar-C.wav";
+                    audioFileName = "guitar-C.aif";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.D:
                     player = guitarPlayer;
-                    audioFileName = "guitar-D.wav";
+                    audioFileName = "guitar-D.aif";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.E:
                     player = guitarPlayer;
-                    audioFileName = "guitar-E.wav";
+                    audioFileName = "guitar-E.aif";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.G:
                     player = guitarPlayer;
-                    audioFileName = "guitar-G.wav";
+                    audioFileName = "guitar-G.aif";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.A:
                     player = guitarPlayer;
-                    audioFileName = "guitar-A.wav";
+                    audioFileName = "guitar-A.aif";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                 default:
                     return;
