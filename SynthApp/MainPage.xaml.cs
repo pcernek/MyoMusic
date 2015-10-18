@@ -49,27 +49,27 @@ namespace SynthApp
             {
                 case VirtualKey.Q:
                     player = drumPlayer;
-                    audioFileName = "drum-1.mp3";
+                    audioFileName = "drum-1.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.W:
                     player = drumPlayer;
-                    audioFileName = "drum-2.mp3";
+                    audioFileName = "drum-2.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.E:
                     player = drumPlayer;
-                    audioFileName = "drum-3.mp3";
+                    audioFileName = "drum-3.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.R:
                     player = drumPlayer;
-                    audioFileName = "drum-4.mp3";
+                    audioFileName = "drum-4.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.T:
                     player = drumPlayer;
-                    audioFileName = "drum-5.mp3";
+                    audioFileName = "drum-5.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
                 case VirtualKey.A:
