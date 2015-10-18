@@ -97,6 +97,31 @@ namespace SynthApp
                     audioFileName = "guitar-A.wav";
                     DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
                     break;
+                case VirtualKey.Z:
+                    player = pianoPlayer;
+                    audioFileName = "piano-C.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
+                    break;
+                case VirtualKey.X:
+                    player = pianoPlayer;
+                    audioFileName = "piano-D.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
+                    break;
+                case VirtualKey.C:
+                    player = pianoPlayer;
+                    audioFileName = "piano-E.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
+                    break;
+                case VirtualKey.V:
+                    player = pianoPlayer;
+                    audioFileName = "piano-G.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
+                    break;
+                case VirtualKey.B:
+                    player = pianoPlayer;
+                    audioFileName = "piano-A.wav";
+                    DrumCanvas.Background = new SolidColorBrush(Colors.Blue);
+                    break;
                 default:
                     return;
             }

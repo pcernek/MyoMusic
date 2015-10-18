@@ -131,6 +131,11 @@
     <Content Include="Assets\myomusic-620x300.png" />
     <Content Include="Assets\myomusic-71.png" />
     <Content Include="Assets\myomusic.png" />
+    <Content Include="Assets\piano-A.wav" />
+    <Content Include="Assets\piano-C.wav" />
+    <Content Include="Assets\piano-D.wav" />
+    <Content Include="Assets\piano-E.wav" />
+    <Content Include="Assets\piano-G.wav" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
