@@ -100,9 +100,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DrumKitSoundBank.cs" />
+    <Compile Include="GuitarSoundBank.cs" />
+    <Compile Include="ISoundBank.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyoPlayer.cs" />
+    <Compile Include="PianoSoundBank.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

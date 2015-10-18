@@ -42,31 +42,28 @@
 
                 <ContentControl x:Name="ColorContentControl" KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
-                <MediaElement x:Name="drumPlayer"></MediaElement>
-                <MediaElement x:Name="guitarPlayer"></MediaElement>
-                <MediaElement x:Name="pianoPlayer"></MediaElement>
+                <MediaElement x:Name="mediaElement1"></MediaElement>
+                <MediaElement x:Name="mediaElement2"></MediaElement>
+                <MediaElement x:Name="mediaElement3"></MediaElement>
 
-                <StackPanel x:Name="DrumPanel" Orientation="Horizontal" Background="White" >
-                    <Canvas x:Name="DrumCanvas" Background="White">
+                <StackPanel x:Name="MyoPlayer1Panel" Orientation="Horizontal" Background="White" >
+                    <Canvas x:Name="MyoPlayer1Canvas" Background="White">
                         <Image Source="Assets\drum-128.png" />
                     </Canvas>
                 </StackPanel>
-                
-                <StackPanel x:Name="GuitarPanel" Orientation="Horizontal" Background="White" RelativePanel.Below="DrumPanel">
-                    <Canvas x:Name="GuitarCanvas" Background="White">
+
+                <StackPanel x:Name="MyoPlayer2Panel" Orientation="Horizontal" Background="White" RelativePanel.Below="MyoPlayer1Panel">
+                    <Canvas x:Name="MyoPlayer2Canvas" Background="White">
                         <Image Source="Assets\guitar-128.png" />
                     </Canvas>
                 </StackPanel>
-                
-                <StackPanel x:Name="BassPanel" Orientation="Horizontal" Background="White" RelativePanel.Below="GuitarPanel">
-                    <Canvas x:Name="BassCanvas" Background="White">
+
+                <StackPanel x:Name="MyoPlayer3Panel" Orientation="Horizontal" Background="White" RelativePanel.Below="MyoPlayer2Panel">
+                    <Canvas x:Name="MyoPlayer3Canvas" Background="White">
                         <Image Source="Assets\bass-128.png" />
                     </Canvas>
                 </StackPanel>
 
-                <TextBlock x:Name="DummyTextBlock" RelativePanel.Below="BassPanel">
-                    
-                </TextBlock>
             </RelativePanel>
 
         </RelativePanel>
