@@ -42,7 +42,8 @@
 
                 <ContentControl x:Name="ColorContentControl" KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
-                <MediaElement x:Name="player"></MediaElement>
+                <MediaElement x:Name="drumPlayer"></MediaElement>
+                <MediaElement x:Name="guitarPlayer"></MediaElement>
 
                 <StackPanel x:Name="DrumPanel" Orientation="Horizontal" Background="White" >
                     <Canvas x:Name="DrumCanvas" Background="White">
