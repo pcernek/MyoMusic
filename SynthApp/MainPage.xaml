@@ -44,6 +44,7 @@
 
                 <MediaElement x:Name="drumPlayer"></MediaElement>
                 <MediaElement x:Name="guitarPlayer"></MediaElement>
+                <MediaElement x:Name="pianoPlayer"></MediaElement>
 
                 <StackPanel x:Name="DrumPanel" Orientation="Horizontal" Background="White" >
                     <Canvas x:Name="DrumCanvas" Background="White">
