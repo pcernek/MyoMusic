@@ -8,17 +8,60 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <RelativePanel>
-            <TextBlock
+        <RelativePanel >
+            <TextBlock x:Name="TitleBlock"
                 Margin="40"
                 FontSize="40"
                 FontWeight="SemiBold">
                 MyoMusic
             </TextBlock>
+            <RelativePanel RelativePanel.Below="TitleBlock" 
+                           RelativePanel.AlignHorizontalCenterWithPanel="True" 
+                           RelativePanel.AlignLeftWithPanel="True" 
+                           RelativePanel.AlignRightWithPanel="True" 
+                           RelativePanel.AlignBottomWithPanel="True"
+                           Margin="20">
+                <RelativePanel.Resources>
+                    <Style TargetType="StackPanel">
+                        <Setter Property="Margin" Value="10"></Setter>
+                        <Setter Property="Height" Value="100"></Setter>
+                        <Setter Property="RelativePanel.AlignLeftWithPanel" Value="True"></Setter>
+                        <Setter Property="RelativePanel.AlignRightWithPanel" Value="True"></Setter>
+                    </Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Width" Value="60"></Setter>
+                        <Setter Property="Margin" Value="5"></Setter>
+                        
+                    </Style>
+                    <Style TargetType="Canvas">
+                        <Setter Property="Width" Value="70"></Setter>
+                        <Setter Property="Height" Value="70"></Setter>
+                        <Setter Property="Margin" Value="10"></Setter>
+                    </Style>
+                </RelativePanel.Resources>
+
+                <ContentControl x:Name="ColorContentControl" KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+                <StackPanel x:Name="DrumPanel" Orientation="Horizontal" Background="White" >
+                    <Canvas x:Name="DrumCanvas" Background="White">
+                        <Image Source="Assets\drum-128.png" />
+                    </Canvas>
+                </StackPanel>
+                
+                <StackPanel x:Name="GuitarPanel" Orientation="Horizontal" Background="White" RelativePanel.Below="DrumPanel">
+                    <Canvas x:Name="GuitarCanvas" Background="White">
+                        <Image Source="Assets\guitar-128.png" />
+                    </Canvas>
+                </StackPanel>
+                
+                <StackPanel x:Name="BassPanel" Orientation="Horizontal" Background="White" RelativePanel.Below="GuitarPanel">
+                    <Canvas x:Name="BassCanvas" Background="White">
+                        <Image Source="Assets\bass-128.png" />
+                    </Canvas>
+                </StackPanel>
+            </RelativePanel>
+
         </RelativePanel>
-        <ContentControl x:Name="ColorContentControl" KeyDown="Grid_KeyDown" KeyUp="Grid_KeyUp" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Canvas x:Name="ColorCanvas" Width="100" Height="100" Background="Red">
-            </Canvas>
-        </ContentControl>
+        
     </Grid>
 </Page>
